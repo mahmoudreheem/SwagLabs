@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SwagLabs">
+    <parameter name="browser" value=""/>
+    <test name="Check Login With Valid Username and Password">
+        <classes>
+            <class name="TestCases.TC01_Login">
+                <methods>
+                    <include name="loginWithValidData_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Choose Random Product">
+    <classes>
+        <class name="TestCases.TC01_Login">
+            <methods>
+                <include name="loginWithValidData_P"/>
+            </methods>
+        </class>
+        <class name="TestCases.TC02_Product">
+            <methods>
+                <include name="ChooseRandomItem"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+
+    <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+    <suite name="SwagLabs">
+        <parameter name="browser" value=""/>
+
+        <suite-files>
+            <suite-file path="Sprint1_Chrome.xml"/>
+            <suite-file path="Sprint2_Firefox.xml"/>
+        </suite-files>
+
+    </suite>
+
+</suite>

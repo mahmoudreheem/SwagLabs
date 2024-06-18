@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SwagLabs">
+    <parameter name="browser" value=""/>
+    <test name="Select Random Products">
+    <classes>
+    <class name="TestCases.TC01_Login">
+        <methods>
+            <include name="loginWithValidData_P"/>
+        </methods>
+    </class>
+    <class name="TestCases.TC02_Product">
+        <methods>
+            <include name="SelectRandomProduct"/>
+        </methods>
+    </class>
+    </classes>
+    </test>
+
+    <test name="Remove Random Products">
+        <classes>
+            <class name="TestCases.TC01_Login">
+                <methods>
+                    <include name="loginWithValidData_P"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC02_Product">
+                <methods>
+                    <include name="SelectRandomProduct"/>
+                    <include name="RemoveProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Submit Products">
+    <classes>
+    <class name="TestCases.TC01_Login">
+        <methods>
+            <include name="loginWithValidData_P"/>
+        </methods>
+    </class>
+    <class name="TestCases.TC02_Product">
+        <methods>
+            <include name="SelectRandomProduct"/>
+        </methods>
+    </class>
+    <class name="TestCases.TC03_ShoppingCart">
+        <methods>
+            <include name="clickShoppingCart"/>
+        </methods>
+    </class>
+    <class name="TestCases.TC04_Checkout">
+        <methods>
+            <include name="clickCheckoutButton"/>
+        </methods>
+    </class>
+    <class name="TestCases.TC05_CompleteInformation">
+        <methods>
+            <include name="clickContinueButton"/>
+        </methods>
+    </class>
+    <class name="TestCases.TC06_SubmitProducts">
+        <methods>
+            <include name="clickFinishButton"/>
+        </methods>
+    </class>
+    </classes>
+    </test>
+
+
+</suite>
