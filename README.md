@@ -1,6 +1,6 @@
 # Swag Labs
 
-![Swag Labs Logo](https://demo.nopcommerce.com/Themes/DefaultClean/Content/images/logo.png)
+![Swag Labs Logo](https://www.saucedemo.com/v1/img/Login_Bot_graphic.png)
 
 ## Table of Contents
 
